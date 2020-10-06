@@ -1,0 +1,17 @@
+{
+	"name": "Jupiter Notebooks",
+	"dockerComposeFile": "./docker-compose.yml",
+	"service": "notebook",
+	"workspaceFolder": "/home/jovyan/notebooks/",
+	"shutdownAction": "stopCompose",
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+	"extensions": [
+		"ms-dotnettools.csharp",
+		"donjayamanne.jupyter",
+		"yzhang.markdown-all-in-one"
+	],
+	"mounts": [
+	],
+}
