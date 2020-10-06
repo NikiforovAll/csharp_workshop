@@ -81,7 +81,10 @@ ENV DOTNET_TRY_CLI_TELEMETRY_OPTOUT=false
 # WORKDIR ${HOME}/notebooks/
 
 # # Copy notebooks
-# COPY ./notebooks/ ${HOME}/notebooks/
+
+## workaround for binder
+COPY ./notebooks/ ${HOME}/notebooks/
+
 RUN chown -R ${NB_UID} ${HOME}
 # USER ${USER}
 
