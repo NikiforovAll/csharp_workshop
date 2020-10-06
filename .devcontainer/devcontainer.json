@@ -1,5 +1,5 @@
 {
-	"name": "Jupiter Notebooks",
+	"name": "Jupyter Notebook: C#",
 	"dockerComposeFile": "./docker-compose.yml",
 	"service": "notebook",
 	"workspaceFolder": "/home/jovyan/notebooks/",

@@ -56,7 +56,7 @@ RUN dotnet_sdk_version=3.1.301 \
 
 # Copy package sources
 
-# COPY ./NuGet.config ${HOME}/nuget.config
+COPY ./NuGet.config ${HOME}/nuget.config
 
 
 #Install interact 
