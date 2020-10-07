@@ -10,7 +10,8 @@
 	"extensions": [
 		"ms-dotnettools.csharp",
 		"donjayamanne.jupyter",
-		"yzhang.markdown-all-in-one"
+		"yzhang.markdown-all-in-one",
+		"ms-dotnettools.dotnet-interactive-vscode"
 	],
 	"mounts": [
 	],
