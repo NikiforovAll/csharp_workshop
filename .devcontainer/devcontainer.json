@@ -1,17 +1,21 @@
 {
+	// cSpell:disable
 	"name": "Jupyter Notebook: C#",
 	"dockerComposeFile": "./docker-compose.yml",
 	"service": "notebook",
 	"workspaceFolder": "/home/jovyan/notebooks/",
 	"shutdownAction": "stopCompose",
 	"settings": {
-		"terminal.integrated.shell.linux": "/bin/bash"
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"workbench.colorTheme": "SynthWave '84",
+		"workbench.panel.defaultLocation": "left",
 	},
 	"extensions": [
 		"ms-dotnettools.csharp",
 		"donjayamanne.jupyter",
 		"yzhang.markdown-all-in-one",
-		"ms-dotnettools.dotnet-interactive-vscode"
+		"ms-dotnettools.dotnet-interactive-vscode",
+		"streetsidesoftware.code-spell-checker",
 	],
 	"mounts": [
 	],

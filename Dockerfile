@@ -54,7 +54,14 @@ RUN dotnet_sdk_version=3.1.301 \
     # Trigger first run experience by running arbitrary cmd
     && dotnet help
 
+
+RUN mkdir $HOME/dotnet_install && cd $HOME/dotnet_install
+RUN curl -H 'Cache-Control: no-cache' -L https://aka.ms/install-dotnet-preview -o install-dotnet-preview.sh
+RUN sudo bash install-dotnet-preview.sh
+
 # Copy package sources
+# TODO: currently, encountering issue with user file access when  dotnet cli is used to restore packages
+# /tmp/NuGetScratch
 
 COPY ./NuGet.config ${HOME}/nuget.config
 
@@ -63,10 +70,11 @@ COPY ./NuGet.config ${HOME}/nuget.config
 RUN pip install nteract_on_jupyter
 
 # Install lastest build from master branch of Microsoft.DotNet.Interactive from myget
-RUN dotnet tool install -g Microsoft.dotnet-interactive --add-source "https://dotnet.myget.org/F/dotnet-try/api/v3/index.json"
+# RUN dotnet tool install -g Microsoft.dotnet-interactive --add-source "https://dotnet.myget.org/F/dotnet-try/api/v3/index.json"
 
 #latest stable from nuget.org
-#RUN dotnet tool install -g Microsoft.dotnet-interactive --add-source "https://api.nuget.org/v3/index.json"
+RUN dotnet tool install -g Microsoft.dotnet-interactive --add-source "https://api.nuget.org/v3/index.json"
+
 
 ENV PATH="${PATH}:${HOME}/.dotnet/tools"
 RUN echo "$PATH"
@@ -75,15 +83,14 @@ RUN echo "$PATH"
 RUN dotnet interactive jupyter install
 
 # Enable telemetry once we install jupyter for the image
-ENV DOTNET_TRY_CLI_TELEMETRY_OPTOUT=false
+# ENV DOTNET_TRY_CLI_TELEMETRY_OPTOUT=false
 
-# # Set root to notebooks
-# WORKDIR ${HOME}/notebooks/
-
-# # Copy notebooks
+# Copy notebooks
 
 ## workaround for binder
 COPY ./notebooks/ ${HOME}/notebooks/
+
+RUN mkdir ${HOME}/samples
 
 RUN chown -R ${NB_UID} ${HOME}
 # USER ${USER}
@@ -93,5 +100,4 @@ WORKDIR ${HOME}/notebooks/
 # Copy notebooks
 # COPY --chown=${NB_UID} ./notebooks/ ${HOME}/notebooks/
 
-# RUN chown -R ${NB_UID} ${HOME}
 USER ${USER}

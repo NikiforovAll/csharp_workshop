@@ -1,0 +1,9 @@
+<Project>
+
+    <PropertyGroup>
+        <Authors>Nikiforov Alexey</Authors>
+    </PropertyGroup>
+    <AnalysisLevel> 5 </AnalysisLevel>
+    <Nullable>enable</Nullable>
+
+</Project>
