@@ -1,5 +1,5 @@
 {
-    // "workbench.colorTheme": "SynthWave '84",
+    "workbench.colorTheme": "Github Light Theme - Gray",
     "omnisharp.enableRoslynAnalyzers": true,
     "omnisharp.enableEditorConfigSupport": true,
 }

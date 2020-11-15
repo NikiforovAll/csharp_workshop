@@ -9,4 +9,3 @@
 - a declarative alternative to conditional code.
 
 - nested switch expressions
-- TODO: CONSIDER: state machine based on switch expressions

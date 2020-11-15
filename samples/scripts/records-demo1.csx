@@ -27,5 +27,5 @@ var p4 = p2 with { LastName = "ModifiedPerson" };
 
 WriteLine($"{p3}");
 WriteLine($"{p4}");
-WriteLine($"object.Equals: {object.Equals(p3, p4)}"); // Value-based equality
-WriteLine($"object.ReferenceEquals: {object.ReferenceEquals(p3, p4)}");
+WriteLine($"object.Equals: {Equals(p3, p4)}"); // Value-based equality
+WriteLine($"object.ReferenceEquals: {ReferenceEquals(p3, p4)}");
