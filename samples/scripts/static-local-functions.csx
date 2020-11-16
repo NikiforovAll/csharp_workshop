@@ -1,11 +1,11 @@
 using System.Runtime.CompilerServices;
 #nullable enable
 
-// static local function
-// local function attributes
-// ref-return
-// target typed expressions
-// simplified default literal
+// static local function C# 8
+// local function attributes C# 9
+// ref-return C# 8
+// target typed expressions C# 9
+// simplified default literal C# 7.1
 
 // TODO: target type expressions
 // TODO: simplify default literal
@@ -41,8 +41,5 @@ void Assign()
     }
 }
 
-
 public record Person(string FirstName, string LastName);
 
-// REFERENCE
-// https://devblogs.microsoft.com/premier-developer/dissecting-the-local-functions-in-c-7/

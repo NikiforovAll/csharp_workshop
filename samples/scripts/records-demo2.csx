@@ -3,9 +3,9 @@
 
 // INHERITANCE VS VALUE semantics
 
-var basePerson = new Person3("John","Doe");
+Person3 basePerson = new ("John","Doe");
 
-Person3 p1 = new Student ("John","Doe");
+Person3 p1 = new ("John","Doe");
 
 // event though we have parent p5 as Person2, other details of instance are preserved
 WriteLine($"object.Equals: {Equals(basePerson, p1)}");

@@ -1,7 +1,7 @@
 #nullable enable
 
-// null coalescing assignment
-// throw expression
+// null coalescing assignment C# 8
+// throw expressions C# 7
 
 
 // TODO: simplify
