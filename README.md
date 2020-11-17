@@ -4,6 +4,8 @@
 
 Let's explore *C#8,9* together.
 
+![catjam](./guide/catjam.gif)
+
 ## Getting started
 
 ### Binder
@@ -20,37 +22,42 @@ Prerequisites:
    * ("command": "remote-containers.openRepositoryInVolume")
 2. Select GitHub and enter NikiforovAll/csharp_workshop
 
-## Manual
+### Manual
 
 Clone repository and investigate on your own.
 
 ## Agenda
 
-* notebooks\nullable-reference-types.ipynb
-* samples\scripts\nullable-reference-types.csx
+* `notebooks\nullable-reference-types.ipynb`
+* `samples\scripts\nullable-reference-types.csx`
 
-* notebooks\functions-misc.ipynb
-* samples\scripts\null-coalescing-assignment.csx
-* samples\scripts\static-local-functions.csx
-* samples\scripts\static-anonymous-functions.csx
-* samples\scripts\lambda-discards.csx
+* `notebooks\functions-misc.ipynb`
+* `samples\scripts\null-coalescing-assignment.csx`
+* `samples\scripts\static-local-functions.csx`
+* `samples\scripts\static-anonymous-functions.csx`
+* `samples\scripts\lambda-discards.csx`
 
-* notebooks\async-streams.ipynb
-* samples\projects\get-enumerator-foreach
+* `notebooks\async-streams.ipynb`
+* `samples\projects\get-enumerator-foreach`
 
-* notebooks\ranges-indexes.ipynb
+* `notebooks\ranges-indexes.ipynb`
 
-* notebooks\using-declarations.ipynb
+* `notebooks\using-declarations.ipynb`
 
-* notebooks\pattern-matching.ipynb
-* samples\scripts\pattern-matching\pattern-matching-demo1.csx
-* samples\scripts\pattern-matching\pattern-matching-demo2.csx
+* `notebooks\pattern-matching.ipynb`
+* `samples\scripts\pattern-matching\pattern-matching-demo1.csx`
+* `samples\scripts\pattern-matching\pattern-matching-demo2.csx`
 
-* notebooks\records.ipynb
-* samples\scripts\records.csx
-* samples\scripts\records-demo1.csx
-* samples\scripts\records-demo2.csx
-* samples\scripts\target-typed-new-expressions.csx
+* `notebooks\records.ipynb`
+* `samples\scripts\records.csx`
+* `samples\scripts\records-demo1.csx`
+* `samples\scripts\records-demo2.csx`
+* `samples\scripts\target-typed-new-expressions.csx`
+
+* `notebooks\top-level-statements.ipynb`
+* `samples\projects\simple-webapi\`
+
+* `samples\projects\module-init`
 
 ## Talk
 
@@ -84,10 +91,11 @@ Clone repository and investigate on your own.
 * ➖ Методы интерфейса по умолчанию C#8
 * ❔ Ковариантные возвращаемые типы C#9
 * Методы назначения (setters) только инициализации C#9
-* Записи (Record types). C# 9
+* Записи (Record types) C# 9
 * ➕ Новые выражения целевого типа C#9
-* Генераторы кода. Инициализаторы модулей C#9
-* Инструкции верхнего уровня C#9
+* Генераторы кода C#9
+* ➕ Инициализаторы модулей C#9
+* ➕ Инструкции верхнего уровня C#9
 
 <!-- cSpell:enable -->
 ## Reference
