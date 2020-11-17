@@ -57,7 +57,10 @@ Clone repository and investigate on your own.
 * `notebooks\top-level-statements.ipynb`
 * `samples\projects\simple-webapi\`
 
+* `notebooks\module-initializers.ipynb`
 * `samples\projects\module-init`
+
+* `notebooks\source-generators.ipynb`
 
 ## Talk
 
